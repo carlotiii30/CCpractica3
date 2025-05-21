@@ -25,6 +25,11 @@ Este repositorio contiene la solución a la práctica 3 de la asignatura *Comput
 
 3. Copia el dataset a HDFS desde el contenedor del cliente:
 
+   > ⚠️ **Importante:**  
+   > El archivo `data/half_celestial.csv` no está incluido en este repositorio debido a su tamaño (mayor de 100 MB).  
+   > Descárgalo manualmente y colócalo en la ruta `data/half_celestial.csv` dentro del directorio del proyecto antes de continuar.  
+   > Puedes solicitar el archivo al profesor o al autor del repositorio.
+
    ```bash
    docker exec -it spark-client bash
    hdfs dfs -mkdir -p /user/carlota
